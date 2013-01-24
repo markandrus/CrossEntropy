@@ -10,7 +10,7 @@ gnuplot << EOF
 	set multiplot layout 2,1 title "$1"
 
 	unset key
-	set ylabel "Cross Entropy"
+	set ylabel "Cross Entropy - Entropy"
 	unset title
 	plot "../output/$1.cross-entropies.csv" u 2:xtic(1) with histeps notitle
 
